@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [20/Dec/2018:22:44:28 +0800] "GET /spring-spitter/ HTTP/1.1" 200 396 http-bio-8080-exec-1 2789
+0:0:0:0:0:0:0:1 - - [20/Dec/2018:22:44:29 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [20/Dec/2018:22:44:31 +0800] "GET /spring-spitter/spittles HTTP/1.1" 404 997 http-bio-8080-exec-4 10
+0:0:0:0:0:0:0:1 - - [20/Dec/2018:22:44:33 +0800] "GET /spring-spitter/spitter/register HTTP/1.1" 404 1013 http-bio-8080-exec-5 1
