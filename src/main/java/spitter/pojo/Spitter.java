@@ -1,7 +1,7 @@
 package spitter.pojo;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
 
 /**
  * 用户类
@@ -11,31 +11,22 @@ import javax.validation.constraints.Size;
 public class Spitter {
 	private Long id;
 	
-	@NotNull
-	@Size(min=2,max=5)
+	@NotBlank   //只能作用在String上，不能为null，而且调用trim()后，长度必须大于0 
+	@Length(min = 2, max = 5, message = "用户名长度必须为2-5")
 	private String username;
 	
-	@NotNull
-	@Size(min=2,max=5)
+	@NotBlank
+	@Length(min = 2, max = 5, message = "密码长度必须为2-5")
 	private String password;
 	
-	@NotNull
+	@NotBlank
 	private String firstName;
 	
-	@NotNull
+	@NotBlank
 	private String lastName;
 	
 	Spitter() {}
 	
-	public Spitter(@NotNull @Size(min = 2, max = 5) String username, @NotNull @Size(min = 2, max = 5) String password,
-			@NotNull String firstName, @NotNull String lastName) {
-		super();
-		this.username = username;
-		this.password = password;
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
-
 	public Long getId() {
 		return id;
 	}
