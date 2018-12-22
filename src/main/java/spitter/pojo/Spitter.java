@@ -12,7 +12,7 @@ public class Spitter {
 	private Long id;
 	
 	@NotBlank   //只能作用在String上，不能为null，而且调用trim()后，长度必须大于0 
-	@Length(min = 2, max = 5, message = "用户名长度必须为2-5")
+	@Length(min = 2, max = 5, message = "{username.size}")
 	private String username;
 	
 	@NotBlank

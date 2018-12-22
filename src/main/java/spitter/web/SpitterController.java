@@ -34,7 +34,8 @@ public class SpitterController {
 	 * @return
 	 */
 	@RequestMapping(value="/register",method=RequestMethod.GET)
-	public String ShowRegistrationForm() {
+	public String ShowRegistrationForm(Spitter spitter,Model model) {
+		model.addAttribute(spitter);
 		return "registerForm";
 	}
 	
@@ -46,7 +47,6 @@ public class SpitterController {
 	@RequestMapping(value="/register",method=RequestMethod.POST)
 	public String Register(@Valid Spitter spitter,BindingResult bindingResult) {
 		if(bindingResult.hasErrors()) {
-			System.out.println(bindingResult.getFieldError().getDefaultMessage());
             return "registerForm";
 		}
 		spitterRepository.SaveUser(spitter);
