@@ -50,7 +50,6 @@ public class SpitterController {
             return "registerForm";
 		}
 		spitterRepository.SaveUser(spitter);
-		System.out.println(spitter.getUsername()+"hkjh");
 		return "redirect:/spitter/"+spitter.getUsername();
 	}
 	
