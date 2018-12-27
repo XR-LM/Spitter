@@ -1,0 +1,8 @@
+spitter\config\RootConfig.class
+spitter\web\HomeController.class
+spitter\config\WebConfig.class
+spitter\dao\SpitterRepository.class
+spitter\dao\SpitterRepositoryImp.class
+spitter\config\SpitterWebAppInitializer.class
+spitter\web\SpitterController.class
+spitter\pojo\Spitter.class

@@ -17,7 +17,7 @@
 		<sf:label path="firstName" cssErrorClass="error">firstName</sf:label><sf:input path="firstName" cssErrorClass="error"></sf:input><br/>
 		<sf:label path="lastName" cssErrorClass="error">lastName</sf:label><sf:input path="lastName" cssErrorClass="error"></sf:input><br/>
 		<sf:label path="username" cssErrorClass="error">username</sf:label><sf:input path="username" cssErrorClass="error"></sf:input><br/>
-		<sf:label path="password" cssErrorClass="error">password</sf:label><sf:password path="password" cssErrorClass="error"></sf:password><br/>
+		<sf:label path="password" cssErrorClass="error">password</sf:label><sf:password path="password" cssErrorClass="error"></sf:password><br/>		
 		<input type="submit" value="Register"/>
 	</sf:form>
 </body>

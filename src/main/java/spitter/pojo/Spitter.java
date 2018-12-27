@@ -25,6 +25,15 @@ public class Spitter {
 	@NotBlank
 	private String lastName;
 	
+	public Spitter(Long id, String username, String password, String firstName, String lastName) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 	Spitter() {}
 	
 	public Long getId() {
